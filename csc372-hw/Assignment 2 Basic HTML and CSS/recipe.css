@@ -1,35 +1,71 @@
-body{
-    background-color:white;
+body {
+    background-color: white;
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, serif;
+    background-image: url(silverware.jpg);
 }
-h1, h2, h3, h4, h5, h6 {
-    background-color:#F0F0F0;
-    color:#A4A400;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: #F0F0F0;
+    color: #A4A400;
     text-decoration: underline;
     text-align: left;
     font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     font-size: 18pt;
 }
 
-a:link{
-    color:#A4A400;
-}
-a:visited{
-    color:#A4A400;
+ul {
+    list-style-image: url("pie_icon.gif");
 }
 
-.emphasize{
-
+a:link {
+    color: #A4A400;
 }
 
-#main{
+a:visited {
+    color: #A4A400;
+}
+
+.comments {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #F0F0F0;
+    color: #A4A400;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#main {
     text-align: center;
     font-size: 22pt;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-#copyright{
-    
+#strike {
+    text-decoration: line-through;
 }
