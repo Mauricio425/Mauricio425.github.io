@@ -7,8 +7,7 @@ body {
     color: #3e3e3e;
 }
 
-header,
-#link {
+header, #link {
     background-color: #172234;
     color: #e3c390;
     display: flex;
@@ -204,7 +203,7 @@ nav a:hover,
     letter-spacing: 0.05em;
     line-height: 40px;
     display: inline-block;
-    font-weight: light;
+    font-weight: lighter;
     font-family: "Palatino Linotype", "Book Antiqua3", Palatino, serif;
     color: #3a3a3a;
     text-align: left;
@@ -334,3 +333,48 @@ nav a:hover,
 
 
 /* end of Product Page Styling */
+/*Product details page*/
+.container {
+    max-width: 25%;
+    margin: 20px auto;
+    background-color: #FAF7F0 ; /* White Container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-name {
+    font-size: 2rem;
+    color: #1B2432;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    color: #3A3A3A;
+    margin-bottom: 20px;
+}
+
+.sort-item a{
+    color: #3A3A3A;
+    text-decoration: none;
+}
