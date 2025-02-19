@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+  Name: Mauricio Garcia-Paez
+  Date: 02.17.2025
+  CSC 372-01
+
+  This is the index.html page for Assignment 3. 
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KungFu-d</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Kung Fu-d Review</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>
+                Welcome! to Kung fu-d Review! If you love discovering delicious eats,
+                you’re in the right place. Whether you’re craving a comforting plate of Arroz con Pollo from San Luis
+                Restaurant, a sweet and crispy Cosmic Waffle from Astro Dogs, or a perfectly brewed Cortado from
+                Coffeeology, this blog has got you covered. I’ll be sharing my thoughts on three amazing spots, each
+                offering a mix of savory, sweet, and satisfying flavors. So, if you're ready to explore some must-try
+                dishes, let’s dive into the world of great food!
+            </p>
+        </section>
+
+        <!-- Restaurant listings and dish recommendations -->
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <article class="restaurant">
+                <h3>San Luis Restaurant</h3>
+                <p>
+                    Located at 1503 W Gate City Blvd in Greensboro, NC, San Luis Restaurant is a go-to spot for
+                    authentic Mexican cuisine and delightful desserts. Whether you're craving a hearty plate of Arroz
+                    con Pollo, a crispy and indulgent Fried Ice Cream, or a classic Flan, this restaurant delivers bold
+                    flavors and satisfying portions. Open seven days a week from 11:00 AM to 10:00 PM, it's the perfect
+                    place for a casual lunch or a flavorful dinner. Although they don’t currently offer promotions, the
+                    delicious food speaks for itself!
+                </p>
+                <h4>Recommended Dishes</h4>
+                <div class="dish-container">
+                    <img src="images/steakandshrimp.jpg" alt="Steak & Shrimp" data-dish="steakandshrimp"
+                        onclick="showDescription('steakandshrimp',this)">
+                    <img src="images/camaronesaladiabla.jpg" alt="Camarones a la Diabla" data-dish="camaronesaladiabla"
+                        onclick="showDescription('camaronesaladiabla',this)">
+                    <img src="images/friedicecream.jpg" alt="Fried Ice Cream" data-dish="friedicecream"
+                        onclick="showDescription('friedicecream',this)">
+                </div>
+                <div class="dish-description-container"></div>
+            </article>
+
+            <article class="restaurant">
+                <h3>Astro Dogs</h3>
+                <p>
+                    Located at 1621 Spring Garden St, Greensboro, NC, Astro Dogs serves up delicious Korean-style
+                    corndogs with crispy coatings and gooey fillings. Alongside their signature corndogs, they offer
+                    tasty sides like Street Corn and warm Hot Chocolate. Open late most nights (until midnight
+                    Thurs-Sat), it’s the perfect spot for a fun and flavorful snack!
+
+                </p>
+                <h4>Recommended Dishes</h4>
+                <div class="dish-container">
+                    <img src="images/asteroidbelt.jpg" alt="asteroidbelt k-korndog" data-dish="asteroidbelt"
+                        onclick="showDescription('asteroidbelt', this)">
+                    <img src="images/martiankorn.png" alt="Martian Korn" data-dish="martiankorn"
+                        onclick="showDescription('martiankorn', this)">
+                    <img src="images/galacticpeach.png" alt="Galactic Peach Treat" data-dish="galacticpeach"
+                        onclick="showDescription('galacticpeach', this)">
+                </div>
+                <div class="dish-description-container"></div>
+            </article>
+
+            <article class="restaurant">
+                <h3>Coffeeoligy</h3>
+                <p>
+                    Located at 423 Tate St, Greensboro, NC 27403, Coffeeoligy specializes in coffee, breakfast items,
+                    and pastries. Open daily—Monday through Friday from 7 AM–6 PM and Saturday–Sunday from 9 AM–4 PM.
+                </p>
+                <h4>Recommended Dishes</h4>
+                <div class="dish-container">
+                    <img src="images/santafeturkeypanini.jpg" alt="Santa Fe Turkey Panini"
+                        data-dish="santafeturkeypanini" onclick="showDescription('santafeturkeypanini', this)">
+                    <img src="images/spartanlatte.webp" alt="Spartan Latte" data-dish="spartanlatte"
+                        onclick="showDescription('spartanlatte', this)">
+                    <img src="images/croissant.avif" alt="Croissant" data-dish="croissant"
+                        onclick="showDescription('croissant', this)">
+                </div>
+                <div class="dish-description-container"></div>
+            </article>
+
+        </section>
+    </div>
+</body>
+
+</html>
