@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal-Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Kung Fu-d Review</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="meal-plan.html">Meal-Plan</a></li>
+                    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Content -->
+        <div class="meal-plan-container">
+            <div id="left-section">
+                <h2>Dish Options</h2>
+                <div class="dish-details" data-dish="Steak & Shrimp" data-price="25.19">
+                    <p><strong>Steak & Shrimp:</strong> <span>$25.19</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Camarones a la Diabla" data-price="20.39">
+                    <p><strong>Camarones a la Diabla:</strong> <span>$20.39</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Fried Ice Cream" data-price="6.99">
+                    <p><strong>Fried Ice Cream:</strong> <span>$6.99</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Galactic Peach Parfait" data-price="4.89">
+                    <p><strong>Galactic Peach Parfait:</strong> <span>$4.89</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Martian Korn" data-price="3.69">
+                    <p><strong>Martian Korn:</strong> <span>$3.69</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Asteroid Belt" data-price="6.69">
+                    <p><strong>Asteroid Belt:</strong> <span>$6.69</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Santa Fe Turkey Panini" data-price="13.00">
+                    <p><strong>Santa Fe Turkey Panini:</strong> <span>$13.00</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Croissant" data-price="4.00">
+                    <p><strong>Croissant:</strong> <span>$4.00</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <div class="dish-details" data-dish="Spartan Latte" data-price="4.75">
+                    <p><strong>Spartan Latte:</strong> <span>$4.75</span></p>
+                    <button class="add-to-plan">Add to Plan</button>
+                </div>
+                <!-- Add more dish options similarly -->
+            </div>
+            <div id="right-section">
+                <h2>Meal Plan</h2>
+                <div class="plan-items">
+                    <div id="meal-plan-items">
+                        <!-- Items will be added here dynamically -->
+                    </div>
+                    <div id="meal-plan-total">
+                        Total: $0.00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content-end -->
+    </div>
+</body>
+
+</html>

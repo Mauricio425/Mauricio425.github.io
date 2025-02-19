@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    
   }
   
   body {
@@ -11,6 +11,7 @@
     color: #333;
     padding: 20px;
     line-height: 1.6;
+    font-family:'Times New Roman', Times, serif;
   }
   
   /* Container for Centering Content */
@@ -27,6 +28,7 @@
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+    font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif ;
   }
   
   header nav ul {
@@ -129,8 +131,49 @@
     font-weight: bold;
   }
   
+  #sources a{
+    color: #f3a277;
+  }
+  #sources a:hover{
+    color: #333;
+  }
+  
   a:hover {
     color: #FFBF69;
   }
+
+  /*meal-plan specific styling*/
+  .meal-plan-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;  /* This sets the overall container width */
+    margin: 0 auto;  /* Centers the container on the page */
+  }
   
+  /* Left Section */
+  #left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;  /* Adjust width so both sections can fit side by side */
+  }
   
+  /* Right Section */
+  #right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;  /* Adjust width similarly */
+  }
+  
+
+  #left-section .dish-details, #right-section .plan-items {
+    /* Your styles here */
+    background-color: #CFC5AE;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+ 

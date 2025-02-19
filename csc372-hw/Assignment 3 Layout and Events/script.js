@@ -114,4 +114,88 @@ function showDescription(dishId, imgElement) {
     container.classList.add("active");
   }
   
+let mealPlan = {};
+
+document.addEventListener('DOMContentLoaded', () => {
+  const addButtons = document.querySelectorAll('.add-to-plan');
+  addButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const dishElement = this.closest('.dish-details');
+      const dishName = dishElement.dataset.dish;
+      const dishPrice = parseFloat(dishElement.dataset.price);
+
+      addDishToMealPlan(dishName, dishPrice);
+    });
+  });
+});
+
+/**
+ * add dish, if already exist add one more to quantity
+ */
+function addDishToMealPlan(dishName, dishPrice) {
+  if (mealPlan[dishName]) {
+    mealPlan[dishName].quantity += 1;
+  } else {
+    mealPlan[dishName] = { price: dishPrice, quantity: 1 };
+  }
+  updateMealPlanDisplay();
+}
+
+/**
+ * refresh mealplan an dprice
+ */
+function updateMealPlanDisplay() {
+  const mealPlanItems = document.getElementById('meal-plan-items');
+  mealPlanItems.innerHTML = ''; // Clear previous content
+
+  let total = 0;
+  // Loops through dishes in meal plan
+  for (const dish in mealPlan) {
+    const { price, quantity } = mealPlan[dish];
+    const itemTotal = price * quantity;
+    total += itemTotal;
+
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'meal-plan-item';
+    itemDiv.innerHTML = `
+      <p><strong>${dish}</strong> - $${price.toFixed(2)} x ${quantity} = $${itemTotal.toFixed(2)}</p>
+      <button class="add-more" data-dish="${dish}">Add One</button>
+      <button class="remove" data-dish="${dish}">Remove One</button>
+    `;
+    mealPlanItems.appendChild(itemDiv);
+  }
+
+  // Update the total
+  document.getElementById('meal-plan-total').textContent = 'Total: $' + total.toFixed(2);
+
+  // listeners for add and remove
+  attachMealPlanButtons();
+}
+
+function attachMealPlanButtons() {
+  // Add one more unit of the dish
+  const addMoreButtons = document.querySelectorAll('.add-more');
+  addMoreButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const dish = this.dataset.dish;
+      mealPlan[dish].quantity += 1;
+      updateMealPlanDisplay();
+    });
+  });
+
+  // Remove dish items
+  const removeButtons = document.querySelectorAll('.remove');
+  removeButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const dish = this.dataset.dish;
+      mealPlan[dish].quantity -= 1;
+      // Remove dish from the plan if = 0
+      if (mealPlan[dish].quantity <= 0) {
+        delete mealPlan[dish];
+      }
+      updateMealPlanDisplay();
+    });
+  });
+}
+
   
