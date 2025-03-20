@@ -1,0 +1,66 @@
+body{
+    background-color: #FFE8D6;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    font-family:'Times New Roman', Times, serif;
+}
+
+  .repo h2{
+    text-align: center;
+  }
+
+  .repo h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+  .repo{
+    width: 400px;
+    height: 700px;
+    background-color: #FFBF69;
+    margin: 15px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  
+  .repo-table{
+    text-align: left;
+  }
+
+  table td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  table th {
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* Container for Centering Content */
+#container {
+    width: 60%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  #search{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+
+  #search div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
