@@ -1,3086 +1,466 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
 <html lang="en">
-<!--
-			<![endif]-->
-
 <head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mauricio Garcia-Paez - Software Developer specializing in Backend Engineering, Cloud Infrastructure, and Systems Programming">
+    <meta name="author" content="Mauricio Garcia-Paez">
+    <title>Mauricio Garcia-Paez | Software Developer</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="shortcut icon" href="assets/images/code.svg">
 </head>
-
 <body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 4 Callbacks/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Assignment 4</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 5 Fetch/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Assignment 5</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">MG</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Mauricio Garcia-Paez</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <p class="hero-description">
+                        I build resilient backend systems and offline-first architectures. 
+                        Specialized in Java, Spring Boot, and AWS, I engineer scalable 
+                        solutions that solve complex infrastructure challenges.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="assets/files/DefaultResume.pdf" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/mauricio-garciapaez" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Mauricio425" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:Mauricio.GarciaPaez@proton.me" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I am a Computer Science graduate (Dec 2025) from UNC Greensboro with a focus on backend
+                        engineering and cloud infrastructure.
+                    </p>
+                    <p>
+                        I don’t just write code; I build robust systems. My passion lies in system-level
+                        programming and offline-first networks, leveraging tools like Spring Boot and AWS 
+                        to solve real-world connectivity problems.
+                    </p>
+                    <p>
+                        As a <strong>bilingual developer</strong> (English/Spanish), I bridge the gap between 
+                        technical complexity and team collaboration. I recently led a team through a major 
+                        capstone project using Agile methodologies, ensuring we delivered innovative, ethical, 
+                        and efficient solutions.
+                    </p>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Durham, NC</span>
+                        <span style="margin-left: 1.5rem;">
+                            <i class="fas fa-language"></i>
+                            <span>Bilingual: English & Spanish</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">JWT Authentication</span>
+                            <span class="skill-tag">Hibernate</span>
+                            <span class="skill-tag">Android Room</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Cloud & Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS EC2</span>
+                            <span class="skill-tag">AWS RDS</span>
+                            <span class="skill-tag">Google Firebase</span>
+                            <span class="skill-tag">Gradle</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Database Management</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Query Optimization</span>
+                            <span class="skill-tag">ER Modeling</span>
+                            <span class="skill-tag">Indexing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Systems Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Multithreading</span>
+                            <span class="skill-tag">Process Management</span>
+                            <span class="skill-tag">Memory Management</span>
+                            <span class="skill-tag">Socket Programming</span>
+                            <span class="skill-tag">Signal Handling</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">AI & Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">LLMs</span>
+                            <span class="skill-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Project</h2>
+
+            <div class="project-card featured">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">TrekSafe</h3>
+                        <p class="project-role">Technical Lead & Full-Stack Developer</p>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    Architected and deployed a full-stack, offline-first hiker safety network that enables peer-to-peer
+                    (BLE) discovery and SOS alert relay in environments without cell service.
+                </p>
+
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Backend Architecture</h4>
+                            <p>
+                                Engineered a 52-endpoint REST API using Java, Spring Boot, and Spring Security (JWT).
+                                Managed production PostgreSQL schema and deployed as a systemd service on AWS EC2
+                                connected to AWS RDS.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Android Development</h4>
+                            <p>
+                                Led development of the Kotlin client with strict MVVM pattern, Jetpack Compose UI,
+                                Room DB for offline-first data caching, and WorkManager for resilient background
+                                data synchronization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>SOS Relay Feature</h4>
+                            <p>
+                                Implemented end-to-end SOS relay system, integrating Firebase Admin SDK (FCM) to push
+                                real-time alerts from stranded users to emergency contacts via Bluetooth Low Energy (BLE).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Security & DevOps</h4>
+                            <p>
+                                Established robust DevSecOps protocols by isolating credentials from the codebase using
+                                environment variables. Enforced strict history scrubbing (git filter-branch) and key 
+                                rotation policies to ensure zero-trust security across the development lifecycle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">AWS EC2</span>
+                    <span class="tech-tag">AWS RDS</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Jetpack Compose</span>
+                    <span class="tech-tag">BLE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="timeline-title">Fulfillment Center Associate</h3>
+                                <p class="timeline-company">Amazon</p>
+                            </div>
+                            <span class="timeline-date">Oct 2019 - Present</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Analyzed workflow logistics to identify operational bottlenecks, implementing strategies
+                                that reduced excessive work buildup</li>
+                            <li>Managed resource allocation across multiple warehouse sectors to ensure 100% operational
+                                continuity during peak volume periods</li>
+                            <li>Maintained high productivity metrics, consistently meeting or exceeding daily throughput
+                                targets in a fast-paced logistics environment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="timeline-title">Behavioral Health Technician</h3>
+                                <p class="timeline-company">AutismCOE</p>
+                            </div>
+                            <span class="timeline-date">May 2023 - Aug 2023</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Collected and analyzed quantitative behavioral data during therapy sessions to track
+                                client progress against treatment plans</li>
+                            <li>Executed individualized intervention strategies, maintaining 100% compliance with
+                                safety protocols and detailed documentation standards</li>
+                            <li>Collaborated with clinical supervisors to refine treatment goals based on daily data
+                                analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                        <p class="education-school">University of North Carolina Greensboro</p>
+                        <p class="education-date">Expected December 2025</p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Associate in Arts</h3>
+                        <p class="education-school">Durham Tech Community College</p>
+                        <p class="education-date">May 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I'm Looking For Section -->
+    <section class="looking-for">
+        <div class="container">
+            <h2 class="section-title">What I'm Looking For</h2>
+            <div class="looking-for-content">
+                <div class="looking-for-text">
+                    <p class="lead">
+                        I am seeking a role in <strong>Backend</strong> or <strong>Full-Stack 
+                        Engineering</strong> where I can contribute to scalable architecture, 
+                        cloud-native systems, and high-performance teams.
+                    </p>
+                </div>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Building scalable REST APIs, microservices, and cloud-native applications</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Full-Stack Engineering</h3>
+                        <p>End-to-end application development with modern frameworks and databases</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI/ML Integration</h3>
+                        <p>Implementing intelligent features using machine learning and LLMs</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Systems Programming</h3>
+                        <p>Low-level development, performance optimization, and distributed systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-intro">
+                I'm currently seeking opportunities in software development. Whether you have a question or
+                just want to say hi, feel free to reach out!
+            </p>
+
+            <div class="contact-methods">
+                <a href="mailto:Mauricio.GarciaPaez@proton.me" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Mauricio.GarciaPaez@proton.me</p>
                 </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
 
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
+                <a href="tel:+19196273493" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>(919) 627-3493</p>
                 </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
 
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
+                <a href="https://linkedin.com/in/mauricio-garciapaez" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
                 </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
 
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
+                <a href="https://github.com/Mauricio425" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>View my code</p>
                 </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
-
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
             </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mauricio Garcia-Paez. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="assets/files/DefaultResume.pdf" target="_blank">Resume</a>
+                <a href="https://linkedin.com/in/mauricio-garciapaez" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Mauricio425" target="_blank">GitHub</a>
             </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
+        </div>
+    </footer>
 
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
 </body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
-                </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
-
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
-                </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
-
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
-                </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
-
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
-
-<head>
-  <title>Mauricio Garcia-Paez</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <!-- ******HEADER****** -->
-  <header class="header">
-    <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Mauricio Garcia-Paez</h1>
-        <h2 class="desc">CS Student</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://github.com/CSC340-sp24">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume.pdf" target="_blank"><i class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">Links to HW Assignments</h2>
-            <div class="content">
-              <p> Project Link</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Project V2/index.html" target="_self"><i
-                  class="fa fa-paper-plane"></i>
-                Project</a>
-              <p> Assignments</p>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 2 Basic HTML and CSS/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 2</a>
-              <a class="btn btn-cta-primary" href="csc372-hw/Assignment 3 Layout and Events/index.html"
-                target="_self"><i class="fa fa-paper-plane"></i>
-                Assignment 3</a>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">Software Engineering Position <span class="place">
-                    <a href="#">Company A</a>
-                  </span>
-                  <span class="year">(2017-2021)</span>
-                </h3>
-                <p> • Participated in Agile software development through scrum sprint cycles, daily stand-up team
-                  meetings, product planning and grooming sessions, and weekly sprint follow-up reports. <br>
-                  • Developed RESTful Java Spring Boot applications using standardized, company-wide software
-                  development guidelines. <br>
-                  • Successfully conducted API design and development of RESTful Services in 2 months, enhancing
-                  operations of the enterprise product in the business. <br>
-                  • Performed unit testing of Spring Boot applications using JUnit, Hamcrest, and Mockito. <br>
-                  • Followed the continuous integration Jenkins pipeline to deploy applications to OpenShift Cloud
-                  Platform. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Software Engineering Position - <span class="place">
-                    <a href="#">Company B</a>
-                  </span>
-                  <span class="year">(2011-2016)</span>
-                </h3>
-                <p> • Full stack development of proprietary 4-tier weather desktop application for company-wide use.
-                  <br>
-                  • Work with software development, quality engineering (QE), and product management teams to design and
-                  implement features and capabilities of desktop apps. <br>
-                  • Develop and extend software tools which automate, analyze, and monitor steel manufacturing
-                  processes.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
-
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
-                </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
-
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">WMS - Workflow
-                  Management System</a></h3>
-
-              <div class="desc text-start">
-                <p>Workflow Management System (WMS) is a project management tool, designed to be a simple and
-                  easy-to-operate platform for teams to collaborate in a Scrum environment.
-                  The main objective of this website is to help administrators, managers, and employees manage Scrum
-                  workflow and assign roles to the designated team members.
-                  WMS will track team projects: backlogs, sprints, and tasks. </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/CSC340-sp24/wms" target="_blank"><i
-                  class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Durham, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:james@website.com">James@website.com</a>
-                </li>
-                <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java / JEE <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Spring +SpringBoot <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">JPA / Hibernate <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">CI/CD - Jenkins <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript &amp; jQuery <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Certified CCP</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Azure <span class="level-label" data-placement="left"
-                      data-animation="true">Certified Azure Fundamentals</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PHP <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Linux <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Git <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Maven <span class="level-label">Intermediate</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BSc Computer Science
-              </h3>
-              <h3 class="university">University of Calgary <span class="year">(1977)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Software Engineering</li>
-                <li>Intro to Databases</li>
-                <li>Data Structures and Algos</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>MSc Computer Science
-              </h3>
-              <h3 class="university">Carnegie Mellon University <span class="year">(1983)</span>
-              </h3>
-
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-        <aside class="testimonials aside section">
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-              <div class="item">
-                <blockquote class="quote">
-                  <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about
-                    what he does. You can totally count on him to deliver your projects!</p>
-                </blockquote>
-                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span>
-                </p>
-              </div><!--//item-->
-
-              <p><a class="more-link" href="http://linkedin.com/in/jamesgosling"><i
-                    class="fa fa-external-link-alt"></i>More on Linkedin</a></p>
-
-            </div><!--//content-->
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-        <aside class="list music aside section">
-
-          <div class="section-inner shadow-sm rounded">
-            <h2 class="heading">Favourite coding music</h2>
-            <iframe src="https://open.spotify.com/embed/track/4wX8INH5GiFoH1EeHupY0x" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media;"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/68d6ZfyMUYURol2y15Ta2Y" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5JWPUEov2wlX7c0jhYZpeB" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6hp0D02uXVXvmaDSLhFjAa" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-            <iframe src="https://open.spotify.com/embed/track/6IC9Z6KQBD7LbtijqzPNHe" width="100%" height="80px"
-              frameBorder="0" allow="encrypted-media; "></iframe>
-
-          </div><!--//section-inner-->
-        </aside><!--//section-->
-      </div>
-      <!--//secondary-->
-    </div>
-    <!--//row-->
-  </div>
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
 </html>
